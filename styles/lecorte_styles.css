@@ -1,0 +1,758 @@
+html,body{
+    height: 100%;
+}
+/* -- Стили для общих элементов -- */
+.title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:  36px;
+    line-height: 54px;
+} 
+.title_w {
+    color: #FFFFFF;
+}
+.title_b {
+    color:#282828;
+}
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.text_w{
+    color: #FFFFFF;
+}
+.text_b{
+    color: #282828;
+}
+.button{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.button_br{
+    /* background-color: #cfccb4; */
+    background-color: #E6E3C4;
+    color: #282828;
+}
+.item{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+/* .no_bd{
+    border: none;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+} */
+/* -- Начало стилизации -- */
+.wrapper{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container {
+    max-width: 1120px;
+    margin   : 0 auto;
+    padding: 0 10px;
+    width: 100%;
+}
+.intro-block{
+    background     : url(../images/bgc.png) no-repeat;
+    background-size: cover;
+    min-height     : 100vh;  
+    align-content: space-between;
+}
+.intro-block__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 0 140px 0;
+}
+.header-contacts{
+   display: flex;
+   justify-content: space-between;
+   padding: 30px 0 20px 0;
+}
+.location, .telephone{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FFFFFF;
+}
+.location:hover, .telephone:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.header-navigation__list{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF
+}
+.navigation__item{
+    border-right: 1px solid #fff;
+}
+.navigation__item a{
+    display: flex;
+    padding: 13px 105px 13px 101px;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+}
+.navigation__item a:hover{
+    background-color: #ffffff;
+    color: #282828;
+    transition: 0.7s;
+}
+.navigation__item:last-child{
+    border-right: none;
+}
+
+.intro-block__content{
+    display: flex;
+    flex-direction: column;
+}
+.content__links{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.intro-block__content a{
+    color: #FFFFFF;
+    background-color:  #99862a;
+    padding: 15px 30px;
+}
+.vinecard__link:hover,.degustation__link:hover{
+    background-color: #282828;
+    color: #ffffff;
+    transition: 0.55s;
+}
+.vinecard__link,.degustation__link{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.vinecard__link{
+    margin: 0 15px 0 0;
+}
+.degustation__link{
+    margin: 0 0 0 15px;
+}
+/* -- Narrative block / Блок описания --- */
+.narrative-block{
+    background-color: #282828;
+    padding: 50px 10px;
+}
+.narrative-block__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    border: 3px solid #C4C4C4;
+}
+.narrative-block__title{
+    position: relative;
+    text-align: center;
+    padding: 60px 10px 40px;
+} 
+.narrative-block__title::after{
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 1px;
+    background-color: #FFFFFF;
+    bottom: 0;
+    left: 50%;
+    margin-left: -80px;
+}
+.narrative-block__text{
+    text-align: center;
+    padding: 40px 10px 25px;
+    max-width: 65%;
+} 
+.narrative-block__image{
+    padding: 25px 20px 40px;
+}
+.narrative-block__image img{
+    width: 100%;
+}
+/* -- Collection Block / Блок коллекции -- */
+.collection-block{
+    background: #E6E3C4;
+    padding: 80px 0;
+} 
+.collection__body{
+    display: flex;
+    padding: 30px 0;
+    border-top: 1px solid #998431;
+    border-bottom: 1px solid #998431;
+} 
+.collection__text{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 62.5px 30px 0;
+} 
+.collection__subtitle{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+} 
+.collection__title{
+    padding: 30px 0;
+    position: relative;
+} 
+.collection__title::after{
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 1px;
+    background-color: #282828;
+    bottom: 0;
+    left: -80px;
+    margin-left: 80px;
+}
+.collection__description{
+    padding: 30px 0;
+    flex-basis: 50%;
+} 
+/*             COLLECTION LIST & ITEMS      */
+.collection__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list__element{
+    display: flex;
+    flex-basis: 80%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #282828;
+} 
+.list__year{
+    flex: 0 0 content;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 31px 24px 26px 19px;
+    border-right: 1px solid #282828;
+} 
+.list__description{
+    padding: 5px 30px 5px 37px;
+} 
+.list__title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 2.5px;
+} 
+.list__subtitle{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 2.5px;
+    padding-bottom: 15px;
+} 
+.collection__list_lower{
+    border: none;
+}
+.collection__button{
+    padding: 15px 30px;
+    width: 254px;
+}
+.collection__button:hover{
+    background-color: #99862A; 
+    color: #ffffff;
+    transition: 0.55s;
+}
+.collection__slider{
+    padding-left: 62.5px;
+    flex: 1 0 45%;
+}
+
+/* --- Описание стилей для блока Формы / Styles for the form block --- */
+
+.degustation__form_block {
+    background: #282828;
+    color     : #FFFFFF;
+    padding   : 129px 0px 100px 0px;
+    position  : relative;
+    z-index   : 1;
+}
+
+.degustation-form__wrap {
+    position: relative;
+}
+
+.degustation__form_row {
+    display       : flex;
+    flex-direction: column;
+    position      : relative;
+    z-index       : 1;
+    border        : 3px solid #C4C4C4;
+}
+
+.degustation__form_row form {
+    padding: 65px 284px 40px 284px;
+}
+
+.degustation-form__text {
+    position: relative;
+    padding : 35px 0 40.5px 0;
+}
+
+.form__text {
+    font-family: "Montserrat-medium";
+    font-weight: 400;
+    size       : 16px;
+    line-height: 24px;
+    text-align : center;
+    padding    : 0 25px;
+}
+
+.form__text::before {
+    content    : '';
+    position   : absolute;
+    width      : 118px;
+    height     : 1px;
+    background : #FFFFFF;
+    top        : 0;
+    left       : 50%;
+    margin-left: -59px;
+}
+
+.degustation__form_title {
+    padding         : 10px 50px 10px 50px;
+    text-align      : center;
+    position        : absolute;
+    z-index         : 3;
+    top             : -37px;
+    left            : 310px;
+    background-color: #282828;
+}
+.degustation-block__image{
+    position        : absolute;
+    z-index         : 3;
+    background-color: #282828;
+}
+.img-1 {
+    left            : -30px;
+    top             : -69px;
+}
+
+.img-2 {
+    right           : -53px;
+    top             : -65px;
+}
+
+/* ----Начало поля форм ----- */
+.form-input__row {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    padding        : 40.5px 0 40px;
+}
+
+.form-personal-data__row {
+    display: flex;
+    padding: 0 0 40px 0;
+}
+
+.input-group__name {
+    margin-right: 15px;
+    position    : relative;
+    z-index     : 0;
+}
+.input-group__telephone {
+    margin-left: 15px;
+    position   : relative;
+    z-index    : 0;
+}
+.input-group__location {
+    position: relative;
+    z-index : 0;
+    padding : 0 0 25px;
+}
+
+/* ----Поля ввода  ----- */
+
+.form__input {
+    font-family     : 'Montserrat';
+    font-weight     : 500;
+    min-width       : 255px;
+    padding         : 0 0 10px 0;
+    border          : none;
+    border-bottom   : 1px solid #FFFFFF;
+    background-color: transparent;
+    color           : white;
+    outline         : none;
+}
+.form__label {
+    font-family: "Montserrat-medium";
+    font-weight: normal;
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    z-index    : -1;
+    transition : 0.3s;
+}
+.location__form {
+    min-width: 540px;
+}
+.form__button {
+    font-family     : "Montserrat-medium";
+    font-weight     : normal;
+    line-height     : 19.5px;
+    font-size       : 16px;
+    margin          : 25px 0 0 0;
+    padding         : 15px 209px;
+    letter-spacing  : 0.05em;
+    border          : 1px solid #FFFFFF;
+    text-decoration : none;
+    text-transform  : uppercase;
+    text-align      : center;
+    color           : white;
+    background-color: #282828;
+    ;
+}
+.form__input:focus~.form__label,
+.form__input:not(:placeholder-shown)~.form__label {
+    top: -18px;
+}
+
+
+/* .form-block{
+    background: #282828;
+    color     : #FFFFFF;
+    padding   : 129px 0px 100px 0px;
+    position  : relative;
+    z-index   : 1;
+}
+.form-block__wrapper{
+    position: relative;
+}
+.form-block__title{
+    padding         : 10px 50px 10px 50px;
+    text-align      : center;
+    position        : absolute;
+    z-index         : 3;
+    top             : -37px;
+    left            : 310px;
+    background-color: #282828;
+}
+.form-block__image{
+    position        : absolute;
+    z-index         : 3;
+    background-color: #282828;
+}
+.img1{
+    left            : -30px;
+    top             : -69px;
+}
+.img2{
+    right           : -53px;
+    top             : -65px;
+}
+.form-block__body{
+    display       : flex;
+    flex-direction: column;
+    position      : relative;
+    z-index       : 1;
+    border        : 3px solid #C4C4C4;
+}
+.form-block__body form{
+    padding: 65px 284px 40px 284px;
+}
+.form-block__content{
+     padding : 35px 0 40.5px 0;
+} */
+/* --- Описание стилей для блока Подвала / Styles description for footer block --- */
+.footer{
+    background-color: #998431;
+    padding: 50px 0;
+}
+.footer__row{
+    display: flex;
+    flex-direction: column;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #FFFFFF;
+}
+.footer-navigation__list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer__item a{
+    display: flex;
+    padding: 19px 20px;
+    color: white;
+} 
+.footer__item:hover{
+    text-decoration: underline;
+    transition-property: left right;
+    transition: 0.5s;
+}
+/* ------------ Ссылки на партнеров и социальны сети / Partners links and socials networks ---------- */
+.footer__contacts{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacts__item{
+    border-top: 1px solid #FFFFFF;
+    border-right: 1px solid #ffffff;
+    flex: 1 1 22%;
+    padding: 19px 20px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+.contacts__item:last-child{
+    border-right: none;
+}
+.contacts__item_bs{
+    border-right: none;
+}
+.contacts__item:hover{
+    background-color: #ffffff;
+    color: #282828;
+    transition: 0.7s;
+}
+.contacts__social{
+   border-top: 1px solid #FFFFFF;
+   border-right: 1px solid #FFFFFF;
+   border-left: 1px solid #FFFFFF;
+   flex: 1 1 20%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.youtube__social{
+    background: url(/images/icons8-youtube.svg);
+    background-position: center;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    color:  #fff;
+    text-align: center;
+    padding: 15px 15px;
+}
+.vk__social{
+    background: url(/images/icons8-vkontakte.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 25px 25px;
+    padding: 15px 15px;
+    margin: 0px;
+}
+.facebook__social{
+    background: url(/images/icons8-facebook.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 25px 25px;
+    padding: 15px 15px
+}
+.youtube__social:hover,.vk__social:hover,.facebook__social:hover{
+    transform: scale(1.3);
+    transition: 0.6s;
+}
+/* -- Адаптирование на низких разрешениях -- */
+@media (max-width:1024px){
+    /* Адаптив блока блока вступления на ширине экрана 1024px / Intro-block adaptation on width 1024px and lower */
+    .navigation__item a{
+        padding: 13px;
+    }
+    .navigation__item{
+        border: none;
+    }
+    /* Адаптив описывающего блока на ширине экрана 1024px/ Narrative-block adaptation on width 1024px and lower */
+    .narrative-block{
+        padding: 20px 5px;
+    }
+    .narrative-block__body{
+        margin: 20px 0;
+    }
+    .narrative-block__title{
+        padding: 30px 10px 20px;
+    }
+    .narrative-block__text{
+        max-width: 100%;
+    }
+    .list__subtitle{
+        padding-bottom: 0;
+    }
+    .list__description{
+        padding: 2.5px 2.5px;
+    }
+    /* Адаптив блока коллекции на ширине экрана 1024px / collection-block adaptation on width 1024px and lower */
+    .collection__body{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .collection__title::after{
+        left: 50%;
+        margin-left: -80px;
+    }
+    .collection__text{
+        padding: 0;
+    }
+    .collection__button{
+        align-self: center;
+    }
+    .list__element{
+        max-width: 50%;
+    }
+}
+@media(max-width:788px){
+     /* Адаптив блока коллекции на ширине экрана 788px / Collection-block adaptation on width 788px and lower */
+    .collection-block{
+        padding: 35px 0;
+    }
+    .list__element{
+        display: block;
+        flex-direction: column;
+    }
+    .list__year{
+        padding: 5px;
+        border-right: none;
+    }
+    /* Адаптив блока подвала(футера) на ширине экрана 788 px / Footer adaptation on width 788px and lower  */
+    .footer__item a{
+        padding: 15px 15px;
+    }
+}
+@media(max-width:768px){
+    .footer{
+        padding: 20px 0;
+    }
+    /* .footer__row{}
+    .footer-navigation__list{} */
+    .footer__item a{
+        padding: 15px 10px;
+    } 
+}
+@media(max-width:676px){
+    .footer__row{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer__head{
+        padding: 0 5px 0 0;
+    }
+    .footer-navigation__list{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__contacts{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 5px;
+    }
+    .contacts__item{
+        border-top: none;
+        border-bottom: 1px solid #ffffff;
+        border-right: none;
+        flex-grow: 0;
+    }
+    .contacts__item:last-child{
+        border-bottom: none;
+        border-top: 1px solid #ffffff;
+    }
+    .contacts__social{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
+}
+@media(max-width:465px){
+     /* Адаптив блока коллекции на ширине экрана 465px / collection-block adaptation on width 465px and lower */
+    .collection-block{
+        padding: 35px 0;
+    }
+     .list__element{
+        justify-content: space-around;
+    }
+    .list__year{
+       padding: 25px 23px 27px 13px;
+       border-right: none;
+    }
+    .list__title {
+        padding: 0 2.5px;
+    }
+    /* Адаптив описывающего блока на ширине экрана 465px/ Narrative-block adaptation on width 465px and lower */
+    .narrative-block__image{
+        padding: 15px 5px 15px;
+    }
+}
+@media (max-width:410px){
+    .intro-block__body{
+        padding-bottom: 20px;
+    }
+    .vinecard__link,.degustation__link{
+        text-align: center;
+        margin: 8px;
+        flex: 1 0 50%;
+    }
+}
+@media (max-width:388px){
+    .intro-block__body{
+        padding: 0;
+    }
+    .location, .telephone{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 11px;
+    }
+    .header-navigation__list{
+        text-align: center;
+        flex-direction: column;
+    }
+    .navigation__item{
+        display: block;
+    }
+    .navigation__item a{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .vinecard__link,.degustation__link{
+        text-align: center;
+        margin: 8px;
+        flex: 1 0 50%;
+    }
+    .collection-block{
+        padding: 35px 0;
+    }
+    .list__year {
+        padding: 36px 23px 40px 31px;
+    }
+}
+@media(max-width:376px){
+    .list__element{
+        display: block;
+        flex-direction: column;
+    }
+    .list__year{
+        padding: 5px;
+        border-right: none;
+    }
+}
